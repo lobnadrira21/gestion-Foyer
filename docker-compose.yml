@@ -14,7 +14,7 @@ services:
   app-foyer:
     depends_on:
       - mysqldb
-    image: lobnadrira21/tp-foyer:1.0.0
+    image: lobnadrira/tp-foyer:1.0.0
     #build : ./
     restart: on-failure
     ports:
