@@ -53,4 +53,5 @@ public class BlocServiceImplTest {
         assertNotNull(result);
         verify(blocRepository, times(1)).save(bloc);
     }
+
 }
