@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   mysqldb:
-    image: mysql:8.0.3
+    image: mysql:5.7
     restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=
@@ -13,7 +13,7 @@ services:
       - 3306:3306
     volumes:
       - db:/var/lib/mysql
-  app-foyer:
+  app-tpFoyer:
     depends_on:
       - mysqldb
     image: doniadrira/tp-foyer:1.0.0
@@ -27,7 +27,7 @@ services:
         "spring.datasource.username" : "root",
         "spring.datasource.password" : "",
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQLDialect",
-        "spring.jpa.hibernate.ddl-auto" : "create"
+        "spring.jpa.hibernate.ddl-auto" : "update"
       }'
     stdin_open: true
     tty: true
