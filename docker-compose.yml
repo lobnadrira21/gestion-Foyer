@@ -16,7 +16,7 @@ services:
   app-tpFoyer:
     depends_on:
       - mysqldb
-    image: emnakh/tp-foyer:1.0.0
+    image: emnakh/tp-foyer:5.0.0
     #build : ./
     restart: on-failure
     ports:
