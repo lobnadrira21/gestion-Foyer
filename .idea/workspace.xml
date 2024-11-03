@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3675a701-1d7f-4e19-ad39-c82050836664" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.TpFoyerApplication.executor": "Run",
-    "com.google.cloudcode.ide_session_index": "20241030_0001",
+    "com.google.cloudcode.ide_session_index": "20241103_0000",
     "git-widget-placeholder": "Bloc",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/emna/OneDrive - ESPRIT/Bureau/gestion-Foyer",
@@ -80,7 +81,7 @@
       <workItem from="1729243119104" duration="1409000" />
       <workItem from="1729765586094" duration="15505000" />
       <workItem from="1730246008261" duration="73000" />
-      <workItem from="1730246101901" duration="1747000" />
+      <workItem from="1730246101901" duration="8058000" />
     </task>
     <servers />
   </component>
