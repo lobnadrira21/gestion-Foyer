@@ -13,11 +13,11 @@ services:
       - 3306:3306
     volumes:
       - db:/var/lib/mysql
+
   app-foyer:
     depends_on:
       - mysqldb
     image: rzem/tp-foyer:1.0.0
-    #build : ./
     restart: on-failure
     ports:
       - 8089:8089
@@ -32,15 +32,15 @@ services:
     stdin_open: true
     tty: true
 
-    mysql-exporter:
-      image: prom/mysqld-exporter
-      restart: unless-stopped
-      ports:
-        - 9104:9104
-      environment:
-        - DATA_SOURCE_NAME="root:@tcp(mysqldb:3306)/"
-      depends_on:
-        - mysqldb
+  mysql-exporter:
+    image: prom/mysqld-exporter
+    restart: unless-stopped
+    ports:
+      - 9104:9104
+    environment:
+      - DATA_SOURCE_NAME="root:@tcp(mysqldb:3306)/"
+    depends_on:
+      - mysqldb
 
 volumes:
-  db :
+  db:
