@@ -38,6 +38,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven.tp-foyer [clean,compile,-DskipTests].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -58,7 +59,39 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.TpFoyerApplication">
+    <configuration name="tp-foyer [clean,compile,-DskipTests]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="TpFoyerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tp-foyer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.tpfoyer.TpFoyerApplication" />
@@ -66,6 +99,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Maven.tp-foyer [clean,compile,-DskipTests]" />
+      <item itemvalue="Spring Boot.TpFoyerApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,7 +118,7 @@
       <workItem from="1729765586094" duration="15505000" />
       <workItem from="1730246008261" duration="73000" />
       <workItem from="1730246101901" duration="8058000" />
-      <workItem from="1730636662302" duration="9544000" />
+      <workItem from="1730636662302" duration="17052000" />
     </task>
     <servers />
   </component>
