@@ -15,7 +15,7 @@ public class EtudiantRestController {
 
     IEtudiantService etudiantService;
 
-
+/*
     @GetMapping("/retrieve-all-etudiants")
     public List<Etudiant> getEtudiants() {
         List<Etudiant> listEtudiants = etudiantService.retrieveAllEtudiants();
@@ -23,7 +23,7 @@ public class EtudiantRestController {
         return listEtudiants;
     }
 
-
+*/
 
     @GetMapping("/retrieve-etudiant-cin/{cin}")
     public Etudiant retrieveEtudiantParCin(@PathVariable("cin") Long cin) {
