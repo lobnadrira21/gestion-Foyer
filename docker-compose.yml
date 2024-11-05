@@ -32,13 +32,13 @@ services:
     stdin_open: true
     tty: true
 
-  mysqld-exporter:
+  mysql-exporter:
     image: prom/mysqld-exporter
     restart: unless-stopped
     ports:
       - 9104:9104
     environment:
-      - DATA_SOURCE_NAME=root:@tcp(mysqldb:3306)/
+      - DATA_SOURCE_NAME="root:@tcp(mysqldb:3306)/"
     depends_on:
       - mysqldb
 
