@@ -19,4 +19,4 @@ jobs:
           JENKINS_USER: admin
           JENKINS_API_TOKEN: 1156a2cc169a46ea0b0c11b08460ae09dd
         run: |
-          curl -v http://192.168.1.100:8080
+          curl -v -u admin:1156a2cc169a46ea0b0c11b08460ae09dd http://192.168.1.100:8080
