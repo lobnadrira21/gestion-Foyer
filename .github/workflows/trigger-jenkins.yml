@@ -1,0 +1,17 @@
+name: Trigger Jenkins Pipeline on Push
+
+on:
+  push:
+    branches:
+      - universite
+
+jobs:
+  trigger-jenkins:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Trigger Jenkins Job
+        run: |
+          curl -X POST http://http://192.168.1.100:8080//job/Mohamed_Rzem_5ArcTic7/build --user admin:1156a2cc169a46ea0b0c11b08460ae09dd
