@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3675a701-1d7f-4e19-ad39-c82050836664" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,9 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Maven.tp-foyer [clean,compile,-DskipTests].executor": "Run",
     "Maven.tp-foyer [clean,compile].executor": "Run",
+    "Maven.tp-foyer [clean,test,compile,install].executor": "Run",
     "Maven.tp-foyer [clean,test].executor": "Run",
+    "Maven.tp-foyer [sonar:sonar].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -48,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.TpFoyerApplication.executor": "Run",
-    "com.google.cloudcode.ide_session_index": "20241106_0000",
+    "com.google.cloudcode.ide_session_index": "20241106_0001",
     "git-widget-placeholder": "Bloc",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/emna/OneDrive - ESPRIT/Bureau/gestion-Foyer",
@@ -61,8 +63,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Maven.tp-foyer [clean,test]">
-    <configuration name="tp-foyer [clean,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn sonar:sonar" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.tp-foyer [clean,test,compile,install]">
+    <configuration name="tp-foyer [clean,test,compile,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -76,6 +83,8 @@
               <list>
                 <option value="clean" />
                 <option value="test" />
+                <option value="compile" />
+                <option value="install" />
               </list>
             </option>
             <option name="multimoduleDir" />
@@ -101,7 +110,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Maven.tp-foyer [clean,test]" />
+      <item itemvalue="Maven.tp-foyer [clean,test,compile,install]" />
       <item itemvalue="Spring Boot.TpFoyerApplication" />
     </list>
   </component>
@@ -121,6 +130,7 @@
       <workItem from="1730246101901" duration="8058000" />
       <workItem from="1730636662302" duration="19035000" />
       <workItem from="1730897660946" duration="1600000" />
+      <workItem from="1730899498596" duration="1850000" />
     </task>
     <servers />
   </component>
