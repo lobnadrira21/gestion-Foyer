@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3675a701-1d7f-4e19-ad39-c82050836664" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Maven.tp-foyer [clean,compile,-DskipTests].executor": "Run",
+    "Maven.tp-foyer [clean,compile].executor": "Run",
+    "Maven.tp-foyer [clean,test].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -46,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.TpFoyerApplication.executor": "Run",
-    "com.google.cloudcode.ide_session_index": "20241103_0001",
+    "com.google.cloudcode.ide_session_index": "20241106_0000",
     "git-widget-placeholder": "Bloc",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/emna/OneDrive - ESPRIT/Bureau/gestion-Foyer",
@@ -59,8 +61,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.TpFoyerApplication">
-    <configuration name="tp-foyer [clean,compile,-DskipTests]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven.tp-foyer [clean,test]">
+    <configuration name="tp-foyer [clean,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -73,8 +75,7 @@
             <option name="goals">
               <list>
                 <option value="clean" />
-                <option value="compile" />
-                <option value="-DskipTests" />
+                <option value="test" />
               </list>
             </option>
             <option name="multimoduleDir" />
@@ -100,7 +101,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Maven.tp-foyer [clean,compile,-DskipTests]" />
+      <item itemvalue="Maven.tp-foyer [clean,test]" />
       <item itemvalue="Spring Boot.TpFoyerApplication" />
     </list>
   </component>
@@ -118,7 +119,8 @@
       <workItem from="1729765586094" duration="15505000" />
       <workItem from="1730246008261" duration="73000" />
       <workItem from="1730246101901" duration="8058000" />
-      <workItem from="1730636662302" duration="17052000" />
+      <workItem from="1730636662302" duration="19035000" />
+      <workItem from="1730897660946" duration="1600000" />
     </task>
     <servers />
   </component>
