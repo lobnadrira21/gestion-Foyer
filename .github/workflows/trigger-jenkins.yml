@@ -13,5 +13,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Trigger Jenkins Job
+        env:
+          JENKINS_URL: http://192.168.1.100:8080
+          JOB_NAME: Mohamed_Rzem_5ArcTic7
+          JENKINS_USER: admin
+          JENKINS_API_TOKEN: 1156a2cc169a46ea0b0c11b08460ae09dd
         run: |
-          curl -X POST http://http://192.168.1.100:8080//job/Mohamed_Rzem_5ArcTic7/build --user admin:1156a2cc169a46ea0b0c11b08460ae09dd
+          curl -X POST "$JENKINS_URL/job/$JOB_NAME/build" --user $JENKINS_USER:$JENKINS_API_TOKEN
