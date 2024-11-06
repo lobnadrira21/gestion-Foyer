@@ -1,7 +1,22 @@
+name: Trigger Jenkins Pipeline on Push
+
+on:
+  push:
+    branches:
+      - universite
+
 jobs:
-  test-connection:
+  trigger-jenkins:
     runs-on: ubuntu-latest
     steps:
-      - name: Test Jenkins Connection
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Trigger Jenkins Job
+        env:
+          JENKINS_URL: http://192.168.1.100:8080
+          JOB_NAME: Mohamed_Rzem_5ArcTic7
+          JENKINS_USER: admin
+          JENKINS_API_TOKEN: 1156a2cc169a46ea0b0c11b08460ae09dd
         run: |
           curl -v http://192.168.1.100:8080
