@@ -3,7 +3,7 @@ name: Trigger Jenkins Pipeline
 on:
   push:
     branches:
-      - universite 
+      - universite
 
 jobs:
   trigger-jenkins:
@@ -17,6 +17,5 @@ jobs:
           JENKINS_URL: "http://192.168.1.100:8080/job/Mohamed_Rzem_5ArcTic7/build"
 
         run: |
-          curl -X POST "${JENKINS_URL}" \
-          --user "${JENKINS_USER}:${JENKINS_API_TOKEN}" \
-          --header "Content-Type: application/json"
+          curl -X POST "${JENKINS_URL}/job/Mohamed_Rzem_5ArcTic7/build" --user "admin:jenkins"
+
