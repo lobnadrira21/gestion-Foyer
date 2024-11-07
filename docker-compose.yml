@@ -32,5 +32,15 @@ services:
     stdin_open: true
     tty: true
 
+  mysql-exporter:
+    image: prom/mysqld-exporter
+    restart: unless-stopped
+    environment:
+      - DATA_SOURCE_NAME=root:@(mysqldb:3306)/
+    ports:
+      - 9104:9104  # Port exposé pour Prometheus
+    depends_on:
+      - mysqldb
+
 volumes:
   db:
