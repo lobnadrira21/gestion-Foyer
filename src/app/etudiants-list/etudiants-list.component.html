@@ -1,0 +1,21 @@
+<h2>Liste des Étudiants</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>CIN</th>
+   
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let etudiant of etudiants">
+      <td>{{ etudiant.idEtudiant }}</td>
+      <td>{{ etudiant.nomEtudiant }}</td>
+      <td>{{ etudiant.prenomEtudiant }}</td>
+      <td>{{ etudiant.cinEtudiant }}</td>
+ 
+    </tr>
+  </tbody>
+</table>

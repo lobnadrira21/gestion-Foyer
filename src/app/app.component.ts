@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -9,5 +11,13 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'front-etudiant';
+  constructor(private router: Router) {}
+
+  goToEtudiantList() {
+    this.router.navigate(['/etudiants']);
+  }
+
+  goToAddEtudiant() {
+    this.router.navigate(['/ajouter-etudiant']);
+  }
 }
