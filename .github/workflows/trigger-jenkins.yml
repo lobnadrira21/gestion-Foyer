@@ -17,5 +17,5 @@ jobs:
           JENKINS_URL: "http://192.168.1.100:8080/job/Mohamed_Rzem_5ArcTic7/build"
 
         run: |
-          curl -X POST -u admin:jenkins https://192.168.1.100:8080/job/Mohamed_Rzem_5ArcTic7/build
+          curl -X POST -u admin:11f65d0948b0b0f91c935ed9c655677855 https://192.168.1.100:8080/job/Mohamed_Rzem_5ArcTic7/build
 
