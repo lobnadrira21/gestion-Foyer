@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  angular-app:
+    image: youssefhamrouni/youssefhamrouni/tp-foyer-front:1.0.0 
+    ports:
+      - "80:80"  
+    volumes:
+      - ./dist:/usr/share/nginx/html  
+    networks:
+      - angular-network
+
+networks:
+  angular-network:
+    driver: bridge
