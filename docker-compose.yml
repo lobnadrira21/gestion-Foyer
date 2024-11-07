@@ -36,7 +36,7 @@ services:
     image: prom/mysqld-exporter
     restart: unless-stopped
     environment:
-      - DATA_SOURCE_NAME=root:@(mysqldb:3306)/tpfoyerdb
+      - DATA_SOURCE_NAME=root:@tcp(mysqldb:3306)/tpfoyerdb
     ports:
       - 9104:9104  # Port exposé pour Prometheus
     depends_on:
