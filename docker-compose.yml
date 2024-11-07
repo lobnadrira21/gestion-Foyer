@@ -33,15 +33,14 @@ services:
     tty: true
 
   frontend:
-    build: ./tp-foyer-frontend # Point to your frontend directory where Dockerfile is located
+    depends_on:
+      - app-tpFoyer
+    image: emnakh/tpfoyer-frontend
     restart: unless-stopped
     ports:
-      - 80:80  # Frontend will be accessible on port 80
-    volumes:
-      - ./tp-foyer-frontend:/app  # Mount the frontend code into the container
+      - 80:80
     environment:
-      - VUE_APP_API_URL=http://app-tpFoyer:8089 # Example environment variable for connecting the frontend to the backend
-    depends_on:
-      - app-tpFoyer  # Ensures the backend is up before the frontend
+      - VUE_APP_API_URL=http://app-tpFoyer:8089
+
 volumes:
   db :
