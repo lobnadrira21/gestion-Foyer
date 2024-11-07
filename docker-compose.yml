@@ -32,15 +32,18 @@ services:
     stdin_open: true
     tty: true
 
-  mysql-exporter:
-    image: prom/mysqld-exporter
+  mysqld-exporter:
+    image: quay.io/prometheus/mysqld-exporter
+    container_name: mysqld-exporter
     restart: unless-stopped
-    environment:
-      - DATA_SOURCE_NAME=root:@tcp(mysqldb:3306)/tpfoyerdb
-    ports:
-      - 9104:9104  # Port exposé pour Prometheus
+    command:
+      - "--mysqld.username=root"
+      - "--mysqld.password="
+      - "--mysqld.address=mysqldb:3306"
     depends_on:
       - mysqldb
+    ports:
+      - 9104:9104
 
 volumes:
   db:
