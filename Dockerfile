@@ -1,29 +1,29 @@
-# Étape 1 : Construction de l'application Angular
-FROM node:18.19 AS build
+# Use the official Node.js image as a build stage
+FROM node:18 AS build
 
-# Définir le répertoire de travail dans le container
+# Set the working directory
 WORKDIR /app
 
-# Copier les fichiers package.json et package-lock.json
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Installer les dépendances
+# Install dependencies
 RUN npm install
 
-# Copier le reste du code source de l'application
+# Copy the rest of the application
 COPY . .
 
-# Compiler l'application Angular
+# Build the Angular application
 RUN npm run build --prod
 
-# Étape 2 : Créer l'image de production
+# Use a lightweight server to serve the application
 FROM nginx:alpine
 
-# Copier les fichiers construits dans l'image de Nginx
-COPY --from=build /app/dist/tp-foyer-front/* /usr/share/nginx/html/
+# Copy the built files from the build stage
+COPY --from=build /app/dist/tp-foyer-front /usr/share/nginx/html
 
-# Exposer le port de Nginx
+# Expose the port the app runs on
 EXPOSE 80
 
-# Démarrer Nginx
+# Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
