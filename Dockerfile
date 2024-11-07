@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Construire l'application Angular
-RUN npm run build -- --configuration production
+RUN npm run build --prod
 
 
 # Étape 2 : Utiliser Nginx pour servir l'application
@@ -23,8 +23,6 @@ FROM nginx:alpine
 # Copier les fichiers Angular construits dans le dossier de Nginx
 COPY --from=build /app/dist/FoyerFront /usr/share/nginx/html
 
-# Copier la configuration Nginx pour la redirection vers index.html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Exposer le port 80
 EXPOSE 80
