@@ -20,7 +20,7 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 # Copier les fichiers construits dans l'image de Nginx
-COPY --from=build /app/dist/ /usr/share/nginx/html
+COPY --from=build /app/dist/tp-foyer-front/* /usr/share/nginx/html/
 
 # Exposer le port de Nginx
 EXPOSE 80
