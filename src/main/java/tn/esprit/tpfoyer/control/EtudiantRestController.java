@@ -15,14 +15,14 @@ public class EtudiantRestController {
 
     IEtudiantService etudiantService;
 
-
+/*
     @GetMapping("/retrieve-all-etudiants")
     public List<Etudiant> getEtudiants() {
         List<Etudiant> listEtudiants = etudiantService.retrieveAllEtudiants();
         System.out.println("hahahahaaaaaaaaaaahahahahahahahahahahahahahahahahah");
         return listEtudiants;
     }
-
+*/
 
 
     @GetMapping("/retrieve-etudiant-cin/{cin}")
