@@ -1,5 +1,5 @@
 # Étape 1 : Construction de l'application Angular
-FROM node:18 AS build
+FROM node:18.19 AS build
 
 # Définir le répertoire de travail dans le container
 WORKDIR /app
