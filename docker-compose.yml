@@ -37,8 +37,7 @@ services:
     container_name: mysqld-exporter
     restart: unless-stopped
     command:
-      - "--mysqld.username=root"
-      - "--mysqld.password="
+      - "--mysqld.username=root:"
       - "--mysqld.address=mysqldb:3306"
     depends_on:
       - mysqldb
